@@ -1,0 +1,422 @@
+body {
+    font-family: "Barlow", sans-serif
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+nav {
+    background-color: white;
+    background-image: url(image/nav.svg);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .container .hamburger {
+    display: none;
+    cursor: pointer;
+  
+  }
+  
+  #hamburger-div {
+    justify-content: center;
+    width: 99%;
+    height: 500px;
+    background-color: white;
+    padding: 40px 20px 40px 20px;
+    border-radius: 32px 32px 0px 0px;
+    display: none;
+  
+  }
+  
+  #rightnav {
+    color: #2e5171;
+    margin-right: -90px;
+  }
+  
+  .lowercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    font-family: "Barlow";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: center;
+  }
+  
+  .ul-nav {
+    color: #2e5171;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  #a-nav {
+    color: #2e5171;
+  }
+
+/* orientasion */
+.about-us {
+    display: flex;;
+    margin: 0 auto;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+
+.title-O {
+    color: #2E5070;
+    font-weight: 900;
+    Size: 64px;
+    Line height: 76.8px;
+}
+
+.left-O {
+ display: flex;
+ padding-top: 100px;
+}
+
+.right-O {
+    margin-left: 48px;
+    padding-top: 80px;
+    padding-left: 90px;
+}
+
+.paw {
+    height: fit-content;
+    max-width: 200%;
+}
+
+/* service */
+
+.service {
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 320px;
+    padding-right: 320px;
+}
+
+.title-part-S {
+    flex: 1;
+    padding-left: 10px;
+}
+
+.fill-part-S {
+    flex: 1;
+}
+
+.title-service {
+    font-family: Barlow;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+}
+
+.service h4 {
+    color: #2E5070;
+}
+
+/* jadwal */
+.jadwal-dokter-section {
+    background-color: #f8f9fa;
+    padding: 50px 0;
+    margin-top: -10px;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+
+.jadwal-dokter-section h2 {
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.doctors {
+    display: flex;
+    gap: 64px;
+    margin-top: 48px;
+}
+
+.text-doctor {
+    padding-left: 30px;
+}
+
+.jadwal {
+    color: #2E5070;
+
+}
+
+.doctor-left {
+    flex: 1;
+}
+
+.doctor-right {
+    flex: 1;
+}
+
+.doctor {
+    display: flex;
+    margin-bottom: 20px;
+    color: #2E5070;
+
+}
+
+.doctor-img {
+    max-width: 70%;
+    border-radius: 0px;
+    object-fit: cover;
+
+}
+
+.G-doctor {
+    background-color: #C6EAE3;
+}
+
+/* contact */
+.row {
+    background-color: #5fb7a7;
+    border-radius: 16px;
+    color: white;
+}
+
+/* footer */
+footer {
+    background: #2e5070;
+    background-image: url(image/paw-patttern-footer.svg);
+  }
+  
+  #footer-part {
+    display: flex;
+  }
+  
+  #main-footer {
+    display: flex;
+  }
+  
+  .footer-title {
+    color: #c6eae3;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+  }
+  
+  .hr-footer {
+    border: solid 1px white;
+    width: 95%;
+  }
+  
+  .copyright {
+    color: white;
+  }
+  
+  .CSN {
+    font-weight: 600;
+  }
+
+
+@media (max-width: 1400px) {
+     /* orientasion  */
+     .about-us {
+        padding-left: 340px;
+        padding-right: 340px;
+    }
+
+    /* service */
+    .service {
+        padding-left: 340px;
+        padding-right: 340px;
+    }
+
+    /* jadwal */
+    .jadwal-dokter-section {
+        padding-left: 340px;
+        padding-right: 340px;
+    }
+
+    /* footer */
+    #footer-part {
+        flex-direction: column;
+    }
+
+    #main-footer {
+        margin-left: 64px;
+    }
+
+    #social-media {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1280px) {
+    /* orientasion  */
+    .about-us {
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+
+    /* service */
+    .service {
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+
+    /* jadwal */
+    .jadwal-dokter-section {
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+    
+
+    .doctors {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    /* orientasion  */
+    .about-us {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+
+    /* service */
+    .service {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+
+    /* jadwal */
+    .jadwal-dokter-section {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+}
+
+@media (max-width: 830px) {
+    /* orientasion  */
+    .about-us {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    #paw {
+        display: flex;
+        gap: -80px;
+    }
+    
+    /* service */
+    .service {
+         padding-left: 90px;
+         padding-right:90px;
+    }
+
+    /* jadwal */
+    .jadwal-dokter-section {
+        flex-direction: column;
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+}
+
+@media (max-width: 680px)  {
+    /* orientasion  */
+    .about-us {
+        padding-left: 60px;
+        padding-right: 60px;
+        }
+    
+    /* service */
+    .service {
+         padding-left: 60px;
+         padding-right:60px;
+    }
+
+    /* jadwal */
+    .jadwal-dokter-section {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    nav {
+      overflow: hidden;
+      z-index: 10;
+    }
+  
+    #rightnav a {
+        display: none;
+    }
+  
+    .container .hamburger {
+        display: flex;
+    }
+  
+    #hamburger-div {
+        display: none;
+        margin-top: 110px;
+        position: fixed;
+        z-index: 10;
+    }
+    #hamburger-div a {
+        color: #2e5171;
+    } 
+    /* footer  */
+    #main-footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 580px) {
+     /* orientasion  */
+  .about-us {
+    flex-direction: column;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.left-O {
+  flex-direction: column;
+}
+
+.right-O {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.title-doctor {
+    padding-left: 40x;
+}
+
+.paw {
+ height: fit-content;
+ max-width: 90%;
+ padding: 0px 0px;
+}
+
+
+    
+    /* service */
+    .service {
+        flex-direction: column;
+        padding-left: 40px;
+        padding-right:40px;
+        margin: 0px 0px 0px;
+    }
+
+    /* jadwal */
+    .jadwal-dokter-section {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .doctor {
+        flex-direction: column;
+    }
+}

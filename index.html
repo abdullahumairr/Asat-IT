@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joy Cat</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="main.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+
+    <nav class="rounded-pill d-flex align-items-center justify-content-between" style="padding-right: -900px; height: 80px; overflow: hidden;">
+      <div class=" mx-5">
+          <a class="navbar-brand" href="index.html">
+              <img src="image/logo (2).svg" alt="Bootstrap" width="120px" height="50px">
+          </a>
+      </div>
+      <div class="container d-flex justify-content-end mx-3" id="rightnav" style="gap: 24px; padding-right: -100px;">
+          <a style="color: #2e5171; font-weight: 600;" href="/about/" class="text-decoration-wh">Tentang Kami</a>
+          <a style="color: #2e5171; font-weight: 600;" href="/clinic/" class="text-decoration-none">Klinik</a>
+          <a style="color: #2e5171; font-weight: 600;" href="/daycare/" class="text-decoration-none">Daycare & Grooming</a>
+          <a style="color: #2e5171; font-weight: 600;" href="/adoption/" class="text-decoration-none">Adopsi</a>
+          <img src="image/menu-list-right hamburger.svg" class="hamburger" alt="" id="menu"
+              onclick="myFunction(); changeImage()">
+      </div>
+  </nav>
+  <div id="hamburger-div">
+      <div class="container lowercontainer">
+          <a href="/about/ " class="text-decoration-none">Tentang Kami</a>
+          <a href="/clinic/" class="text-decoration-none">Klinik</a>
+          <a href="/daycare/" class="text-decoration-none">Daycare & Grooming</a>
+          <a href="/adoption/" class="text-decoration-none">Adopsi</a>
+          <p class="align-content-center"><img src="image/whatsapp-hamburger.svg" alt="">0812-3456-78910</p>
+      </div>
+    </div>
+
+    <section
+      class="hero-section text-center"
+      style="background: #edf8f9;"
+    >
+      <div id="orientasion" class="container">
+        <div class="left" style="text-align: left;">
+          <h1 class="judul" >
+            Professional, Loving and Reliable Cat Care When You Can’t be There
+          </h1>
+          <p class="main-text">
+            Di Joy Cat, kami berkomitmen untuk memberikan perawatan terbaik bagi kucing kesayangan Anda. Kami menawarkan berbagai layanan yang dirancang khusus untuk memastikan kesehatan dan kebahagiaan kucing Anda. Dari klinik  pilihan tepat bagi para pemilik kucing yang peduli.
+          </p>
+          <img src="image/CatPaw.svg" alt="">
+        </div>
+        <div class="right">
+          <img id="three-cats-1" class="three_cats " src="image/three-cat.svg" alt="">
+          <img id="three-cats-1" class="three_cats " src="" alt="">
+          <img id="three-cats-1" class="three_cats " src="" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="service-section">
+        <h2 id="judul-card" class="text-center">Our Services</h2>
+        <div id="card-J" class="row px-5">
+          <div class="col-12 col-md-4">
+              <div id="card-1" class="" >
+                <img
+                  id="image-card"
+                  src="image/retangle cat 1.svg"
+                  alt="Klinik Kucing"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Klinik Kucing</h5>
+                  <p class="card-text">
+                    Tim dokter hewan kami yang berpengalaman siap memberikan perawatan medis terbaik untuk kucing Anda. Kami menyediakan layanan vaksinasi, pemeriksaan rutin, pengobatan penyakit, dan konsultasi kesehatan.
+                  </p>
+                  <button id="button-card" class="btn w-100 rounded-pill" type="button">Cek Dokter</button>
+                </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div id="card-1">
+              <img
+                id="image-card"
+                src="image/Rectangle cat 2.svg"
+                alt="Daycare & Grooming"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Daycare & Grooming</h5>
+                <p class="card-text">
+                  Butuh tempat yang aman dan nyaman untuk menitipkan kucing Anda saat Anda sibuk? Daycare kami adalah solusinya. Selain itu, layanan grooming kami akan membuat kucing Anda tetap bersih dan cantik.
+                </p>
+                <button id="button-card" class="btn w-100 rounded-pill" type="button">Lihat Paket</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div id="card-1">
+              <img
+                id="image-card"
+                src="image/Rectangle cat 3.svg"
+                alt="Adopsi Kucing"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adopsi Kucing</h5>
+                <p class="card-text">
+                  Bantu kami menemukan rumah baru yang penuh cinta untuk kucing-kucing yang membutuhkan. Lihat kucing-kucing yang siap diadopsi dan jadilah bagian dari cerita bahagia mereka.
+                </p>
+                <button id="button-card" class="btn w-100 rounded-pill" type="button">Cari Kucing</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+            
+            
+        </div>
+    </section>
+
+    <section id="opening-place" class=" py-5">
+      <div class="ml-5" style="color: #2e5171;">
+        <div id="OP-MQ" class="row mt-5 mb-5">
+          <div id="opening-hours" class="col-md-3 px-4 pt-4">
+            <h5>Opening Hours</h5>
+            <p style="font-weight: 600;">Weekdays</p>
+            <p class="mt-n3">08:00 - 17:00</p>
+            <p style="font-weight: 600;">Weekend</p>
+            <p class="mt-n3">07:00 - 18:00</p>
+            <hr>
+            <h5>Kontak Cepat</h5>
+            <p style="font-weight: 600;">Whatsapp:</p>
+            <p class="mt-n3"><a class="number" href="https://wa.me/0812345678910">012-345-5678</a></p>
+          </div>
+          <div id="address" class="col-md-3 px-4 ml-4">
+            <h5 class="pt-4">Alamat Kami</h5>
+            <p class="pt-1">
+              Jl. Radar Auri No.32d, Cisalak Ps., Kec. Cimanggis, Kota Depok,
+              Jawa Barat 16452
+            </p>
+            <iframe id="maps" class="pb-2 px-1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15860.663436893967!2d106.8679048!3d-6.3725769!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69edee0a2b7f05%3A0x95ab16f97f8f308a!2sMoreTHAN%20Veterinary%20Clinic!5e0!3m2!1sid!2sid!4v1717219573615!5m2!1sid!2sid"  height="320"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials-section py-5">
+      <div id="part-testi" class="part-testi px-5">
+        <h2 class="title-testi ml-n5 p-5">Testimonials</h2>
+        <div id="card-testi" class="row mt-5 mb-5">
+          <div class="col-md-4">
+             <div class="background-testi py-4 px-3">
+              <img src="image/quote.svg" alt="">
+              <p class="main-testi pt-3">
+                It was my second time there. I believe my cat, Dusty had a good time there. Had a major timming and royal splash spa. The fur is still smooth after 2 weeks. They took great care of Dusty knowing that she is pregnant. Recommended!
+              </p>
+              <li class="testi-name">Amelia Rose</li>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="background-testi py-4 px-3">
+              <img src="image/quote.svg" alt="">
+              <p class="main-testi pt-3">
+                Clean and nice for the cats. Grooming package is good too. We chose a special package for our cat🐱, Molly. Today we sent 6 cats for boarding. Love JoyCat service!
+              </p>
+              <li class="testi-name">Niki Jasmine</li>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="background-testi py-4 px-3">
+              <img src="image/quote.svg" alt="">
+              <p class="main-testi pt-3">
+                Sent Casper for grooming and chose to try aromatic salt bath. She enjoyed the session and seems calmer and approachable compared to before 😍. The place is well kept and adhere to Covid 19 SOP. Really recommended!
+              </p>
+              <li class="testi-name">Hanna Isma</li>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="py-4 ">
+      <div class="d-flex">
+        <div id="footer-part" class="row">
+          <div class="px-5">
+            <a href="/index.html">
+            <img src="image/foooter-logo.svg" alt="">
+          </a>
+          </div>
+          <div id="main-footer">
+          <div class="pr-5">
+            <h5 class="footer-title">Main Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="/about/" class="text-light">Home</a></li>
+              <li class="pt-2"><a href="/clinic/" class="text-light">Klinik</a></li>
+              <li class="pt-2"><a href="/daycare/" class="text-light">Daycare & Grooming</a></li>
+              <li class="pt-2"><a href="/adoption/" class="text-light">Adopsi</a></li>
+            </ul>
+          </div>
+          <div class="pr-5">
+            <h5 class="footer-title">Contact</h5>
+            <a class="text-light" href="https://wa.me/0812345678910">0812-3456-78910</a>
+            <p class="text-light pt-2">admin@joycat.com</p>
+            <p class="text-light mt-n2">
+              Jl. Radar Auri No.324, Cisalak <br>Ps., Kec. Cimanggis, Kota <br>Depok,
+              Jawa Barat 16452
+            </p>
+          </div>
+          <div id="social-media">
+            <h5 class="footer-title">Follow us for updates</h5>
+            <div style="display: flex;">
+              <a class="pr-3" href="https://www.youtube.com/"><img src="image/Icon-YT.svg" alt="youtube" /></a>
+              <a class="pr-3" href="https://www.tiktok.com/"><img src="image/Icon-TT.svg" alt="tiktok" /></a>
+              <a href="https://www.instagram.com/"><img src="image/Icon-IG.svg" alt="instagram" /></a>
+            </div>
+            <hr>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <hr class="hr-footer">
+        <p class="copyright pl-5">2024 ©  • Asesmen Sumatif Akhir Tahun <span class="CSN"> Sekolah Developer Indonesia </span> • Dibuat oleh <span class="CSN">Abdullah Umair</span> •  All images are either free stocks or generated by AI • </p>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,446 @@
+body {
+    font-family: "Barlow", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+nav {
+    background-color: white;
+    background-image: url(image/nav.svg);
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    z-index: 10;
+  }
+  
+  .container .hamburger {
+    display: none;
+    cursor: pointer;
+  
+  }
+  
+  #hamburger-div {
+    justify-content: center;
+    width: 99%;
+    height: 500px;
+    background-color: white;
+    padding: 40px 20px 40px 20px;
+    border-radius: 32px 32px 0px 0px;
+    display: none;
+  
+  }
+  
+  #rightnav {
+    color: #2e5171;
+    margin-right: -90px;
+  }
+  
+  .lowercontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    font-family: "Barlow";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: center;
+  }
+  
+  .ul-nav {
+    color: #2e5171;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  
+  #a-nav {
+    color: #2e5171;
+  }
+
+/* mobile-nav */
+.mobile-nav {
+
+}
+
+/* orientasion */
+.about-us {
+    display: flex;;
+    margin: 0 auto;
+    padding-left: 360px;
+    padding-right: 360px;
+}
+
+.title-O {
+    color: #2E5070;
+    font-weight: 900;
+    Size: 64px;
+    Line height: 76.8px;
+    pa
+}
+
+.left-O {
+ display: flex;
+ padding-top: 100px;
+}
+
+.right-O {
+    padding-top: 80px;
+    padding-left: 90px;
+    margin-left: 48px;
+}
+
+.paw {
+  height: fit-content;
+  padding: 0px 64px;
+  max-width: 90%;
+}
+
+/* main */
+.doctor {
+    margin-bottom: 20px;
+
+}
+
+.title-doctor {
+    padding-left: 360px;
+    text-align: left;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #2E5070;
+}
+
+.doctor-1 {
+  display: flex;
+}
+
+.dortor-2 {
+  display: flex;
+}
+
+.doctor-card {
+    max-width: 45%;
+    padding-left: 340px;
+}
+
+.doctor-card-2 {
+    max-width: 45%;
+    padding-right: 340px;
+}
+
+.text-doctor {
+    padding: 75px 340px 0px 32px;
+}
+
+.text-doctor-2 {
+    padding: 75px 32px 0px 340px;
+}
+
+/* profile */
+.team {
+}
+
+.title-team {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #2E5070;
+}
+
+.card-people {
+    display: flex;
+    flex-direction: row;
+    gap: 78px;
+}
+
+.team-member img {
+    max-width: 100%;
+    border-radius: 16px 0px 0px 0px;
+    opacity: 0px;
+
+}
+
+.carrier {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    color: #2E5070;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    color: #2E5070;
+}
+
+/* footer */
+footer {
+    background: #2e5070;
+    background-image: url(image/paw-patttern-footer.svg);
+  }
+  
+  #footer-part {
+    display: flex;
+  }
+  
+  #main-footer {
+    display: flex;
+  }
+  
+  .footer-title {
+    color: #c6eae3;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+  }
+  
+  .hr-footer {
+    border: solid 1px white;
+    width: 95%;
+  }
+  
+  .copyright {
+    color: white;
+  }
+  
+  .CSN {
+    font-weight: 600;
+  }
+  
+
+@media (max-width: 1400px) {
+    /* orientasion  */
+    .about-us {
+        padding-left: 340px;
+        padding-right: 340px;
+    }
+
+    .title-doctor {
+        padding-left: 340px;
+    }
+
+    /* main */
+    
+}
+
+@media (max-width: 1280px) {
+   /* orientasion  */
+    .about-us {
+        padding-left: 220px;
+        padding-right: 220px;
+    }
+
+    .title-doctor {
+        padding-left: 220px;
+    }
+
+    /* main */
+    .doctor-card {
+        max-width: 48%;
+        padding-left: 220px;
+    }
+    
+    .doctor-card-2 {
+        max-width: 48%;
+        padding-right: 220px;
+    }
+
+    .text-doctor {
+        padding: 24px 220px 0px 32px;
+    }
+    
+    .text-doctor-2 {
+        padding: 75px 32px 0px 220px;
+    }
+}
+
+@media (max-width: 1000px) {
+     /* orientasion  */
+     .about-us {
+        padding-left: 128px;
+        padding-right: 128px;
+    }
+
+    .title-doctor {
+        padding-left: 128px;
+    }
+
+    /* main */
+    .doctor-card {
+        max-width: 48%;
+        padding-left: 128px;
+    }
+    
+    .doctor-card-2 {
+        max-width: 48%;
+        padding-right: 128px;
+    }
+
+    .text-doctor {
+        padding: 24px 128px 0px 32px;
+    }
+    
+    .text-doctor-2 {
+        padding: 75px 32px 0px 128px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* footer */
+    . /* footer */
+    #footer-part {
+      flex-direction: column;
+    }
+  
+    #main-footer {
+      margin-left: 64px;
+    }
+  
+    #social-media {
+      margin-left: 0px;
+    }
+}
+
+@media (max-width: 850px) {
+  /* orientasion  */
+  .about-us {
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.title-doctor {
+    padding-left: 64px;
+}
+
+#paw {
+  margin-top: 0px;
+}
+
+/* main */
+.doctor-card {
+    max-width: 48%;
+    padding-left: 64px;
+}
+
+.doctor-card-2 {
+    max-width: 48%;
+    padding-right: 64px;
+}
+
+.text-doctor {
+    padding: 24px 64px 0px 32px;
+}
+
+.text-doctor-2 {
+    padding: 75px 32px 0px 64px;
+}
+
+}
+
+@media screen and (max-width:640px) {
+    nav {
+      overflow: hidden;
+      z-index: 10;
+    }
+  
+    #rightnav a {
+        display: none;
+    }
+  
+    .container .hamburger {
+        display: flex;
+    }
+  
+    #hamburger-div {
+        display: none;
+        margin-top: 110px;
+        position: fixed;
+        z-index: 10;
+    }
+  #hamburger-div a {
+    color: #2e5171;
+  }
+
+  /* orientasion  */
+  .about-us {
+    flex-direction: column;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.left-O {
+  flex-direction: column;
+}
+
+.right-O {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+
+.title-doctor {
+    padding-left: 64px;
+}
+
+.paw {
+ max-width: 70%;
+ padding: 0px 0px;
+}
+
+/* main */
+.doctor-1 {
+  flex-direction: column;
+}
+
+.doctor-2 {
+  flex-direction: column-reverse;
+}
+
+.doctor-card {
+  max-width: 90%;
+}
+
+.doctor-card-2 {
+  max-width: 90%;
+  padding-right: 0px;
+  padding-left: 64px;
+}
+
+
+.text-doctor {
+  padding: 0px 64px;
+}
+
+  /* profile */
+  .card-people {
+    flex-direction: column;
+  }
+
+    /* footer  */
+    #main-footer {
+      flex-direction: column;
+    }
+}
+
+@media screen and (max: width 420px;) {
+    .doctor img, .team-member img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
